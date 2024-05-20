@@ -1,8 +1,11 @@
-import { itemBlogs } from "./component/ItemBlogs.js";
-import { eliminarBlog } from "./helpers/eliminarBlog.js";
-
-(() => {
-  const contentItemBlogs = document.querySelector(".items_blog");
-  itemBlogs(contentItemBlogs);
-  eliminarBlog();
-})();
+// JavaScript para hacer el navbar reutilizable
+function cargarNavbar() {
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+      });
+  }
+  
+  document.addEventListener('DOMContentLoaded', cargarNavbar);
+  

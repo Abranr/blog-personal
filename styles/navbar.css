@@ -1,0 +1,28 @@
+/* Estilos del navbar */
+#navbar {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  #navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+  }
+  
+  #navbar ul li {
+    display: inline;
+  }
+  
+  #navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+  }
+  
+  #navbar ul li a:hover {
+    background-color: #555;
+  }
+  

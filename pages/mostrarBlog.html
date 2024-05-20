@@ -3,7 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Mostrar Blog</title>
+    <link rel="stylesheet" href="../styles/mostrarBlog.css">
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav>
+          <ul>
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Sobre Nosotros</a></li>
+              <li><a href="#">Contacto</a></li>
+          </ul>
+      </nav>
+  </header>
+  <main>
+      <section class="blog-header">
+          <h1>Blog Personal</h1>
+      </section>
+      <section>
+        <textarea class="Nombre-blog" rows="8" cols="30"></textarea>
+      </section>
+      
+      <section class="edit-section">
+          <textarea id="blogContent" rows="10" cols="50"></textarea>
+          <button onclick="editContent()">Editar</button>
+      </section>
+  </main>
+  <script src="script.js"></script>
+
+  </body>
 </html>

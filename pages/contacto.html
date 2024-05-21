@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CONTACTO</title>
-  </head>
-  <body>
-    <h1>Contacto</h1>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/contacto.css">
+  <title>CONTACTO</title>
+</head>
+
+<body>
+  <div class="contact">
+    <form action="">
+      <div class="formulario">
+        <h1>Contacto</h1>
+        <input class="form-dato" type="text" name="name" id="" placeholder="Ingresa tu nombre" required>
+        <input class="form-dato" type="email" id="" pattern="[a-zA-Z0-9_]+*@[a-zA-Z0-9_]+*[.][a-zA-Z]" size="30" required
+          placeholder="Ingresa tu mail" />
+        <textarea class="form-dato" name="" id="" placeholder="Escribe tu mensaje" required></textarea>
+        <input class="button" type="submit" value="Enviar" />
+      </div>
+    </form>
+    <div class="datos">
+      <div class="dato">
+        <img class="icono" src="/images/telefono.png">
+        <h4>Llámanos</h4>
+      </div>
+      <p>0000-0000</p>
+      <div class="dato">
+        <img class="icono" src="../images/ubicacion.png" alt="">
+        <h4>Localización</h4>
+      </div>
+      <p>Av 5 </p>
+      <div class="dato">
+        <img class="icono" src="../images/email.png" alt="">
+        <h4>Email</h4>
+      </div>
+      <p>blog-personal@email.com</p>
+    </div>
+</body>
+
 </html>

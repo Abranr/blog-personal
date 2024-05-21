@@ -1,9 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Mostrar Blog</title>
+    <link rel="stylesheet" href="../styles/mostrarBlog.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav id="navbar">
+      </nav>
+  </header>
+  <main>
+      <section class="blog-header">
+          <h1>Blog Personal</h1>
+      </section>
+      <section>
+        <textarea class="Nombre-blog" rows="8" cols="30"></textarea>
+      </section>
+      
+      <section class="edit-section">
+          <textarea id="blogContent" rows="10" cols="50"></textarea>
+          <button onclick="editContent()">Editar</button>
+      </section>
+  </main>
+  <script src="script.js"></script>
+  <script src="../app/app.js"></script>
+
+  </body>
 </html>

@@ -1,9 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Crear</title>
+    <link rel="stylesheet" href="blog.css">
+    <script src="componente.js"></script>
+    <link rel="stylesheet" href="../styles/navbar.css">
+</head>
+<body>
+  <nav id="navbar">
+    <!-- <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Acerca de</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul> -->
+  </nav>
+  <style>
+
+nav {
+    background-color: black;
+    text-align: center;
+    font-size: 30px;
+    height: 50px;
+    width: 100%;
+    color: white;
+}
+
+.texto {
+    margin-top: 15px;
+    height: 350px;
+    width: 80%;
+    font-size: 26px;
+}
+
+.formulario {
+    font-size: 18px;
+}
+
+.titulo-exp {
+    width: 80%;
+    font-size: 30px;
+}
+
+.publicar-btn {
+  display: flex;
+  flex-direction: left;
+   
+}
+
+.publicar {
+    background-color: green;
+    color: white;
+    font-size: 20px;
+}
+  </style>
+
+
+    <h4>Publicar blog de experiencia</h4>
+
+    <section>
+
+        <form action="/my-handling-form-page" method="post" class="formulario">
+            <ul>
+                <input type="text" id="name" name="user_name" class="titulo-exp"/>
+                
+                <textarea id="msg" name="user_message" class="texto">
+                </textarea>
+
+            </ul>
+
+            <div class="publicar-btn">
+              <button class="publicar"> Publicar</button>
+            </div>
+            
+          </form>
+    </section>
+    <script src="../app/app.js"></script>
+</body>
 </html>

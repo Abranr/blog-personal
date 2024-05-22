@@ -9,14 +9,17 @@
   <title>CONTACTO</title>
 </head>
 <body>
+  <header>
   <nav id="navbar">
   </nav>
+</header>
   <div class="contact">
     <form action="">
       <div class="formulario">
         <h1>Contacto</h1>
-        <input class="form-dato" type="text" name="name" id="" placeholder="Ingresa tu nombre" required>
-        <input class="form-dato" type="email" id="" pattern="[a-zA-Z0-9_]+*@[a-zA-Z0-9_]+*[.][a-zA-Z]" size="30" required
+        <input class="form-dato" type="text" name="name" id="" placeholder="Ingresa tu nombre"  pattern="([A-Za-z]+(?: [A-Za-z]+)*$)" title="Ingresa un nombre que no contenga caracteres especiales ni números" required>
+        <input class="form-dato" type="text" name="name" id="" placeholder="Ingresa tu número"  pattern="^[0-9]{8}$" title="Número de teléfono valido de 8 carácteres" required>
+        <input class="form-dato" type="email" id="" pattern="^[a-zA-Z0-9_]+@[a-zA-Z]+\.[a-zA-Z]+$" title="Ingresa un correo con el siguiente formato nombre@example.com" size="30" required
           placeholder="Ingresa tu mail" />
         <textarea class="form-dato" name="" id="" placeholder="Escribe tu mensaje" required></textarea>
         <input class="button" type="submit" value="Enviar" />
@@ -40,6 +43,31 @@
       <p>blog-personal@email.com</p>
     </div>
     <script src="../app/app.js"></script>
+<!-- /*
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          const form = document.getElementById('contact-form');
+
+          const fields = form.querySelectorAll('.form-dato');
+
+          fields.forEach(field => {
+              field.addEventListener('input', function () {
+                  const errorSpan = document.getElementById(`${field.id}-error`);
+                  if (field.validity.valid) {
+                      errorSpan.style.display = 'none';
+                  } else {
+                      errorSpan.style.display = 'inline';
+                  }
+              });
+
+              field.addEventListener('invalid', function () {
+                  const errorSpan = document.getElementById(`${field.id}-error`);
+                  errorSpan.style.display = 'inline';
+              });
+          });
+      });
+  </script> -->
+
 </body>
 
 </html>

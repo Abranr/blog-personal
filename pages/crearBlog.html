@@ -1,43 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog Crear</title>
-    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="blog.css" />
     <script src="componente.js"></script>
-    <link rel="stylesheet" href="../styles/navbar.css">
-    <link rel="stylesheet" href="../styles/crearBlog.css">
-</head>
-<body>
-  <nav id="navbar">
-    <!-- <ul>
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Acerca de</a></li>
-      <li><a href="#">Contacto</a></li>
-    </ul> -->
-  </nav>
+
+    <link rel="stylesheet" href="../styles/navbar.css" />
+  </head>
+  <body>
+    <nav id="navbar"> </nav>
+    
 
     <h4>Publicar blog de experiencia</h4>
 
     <section>
+      <form action="/my-handling-form-page" method="post" class="formulario">
+        <ul>
+          <input type="text" id="name" name="user_name" class="titulo-exp" />
 
-        <form action="/my-handling-form-page" method="post" class="formulario">
-            <ul>
-                <input type="text" id="name" name="user_name" class="titulo-exp"/>
-                
-                <textarea id="msg" name="user_message" class="texto">
-                </textarea>
+          <textarea id="msg" name="user_message" class="texto"> </textarea>
+        </ul>
 
-            </ul>
-
-            <div class="publicar-btn">
-              <button class="publicar"> Publicar</button>
-            </div>
-            
-          </form>
+        <div class="publicar-btn">
+          <button class="publicar">Publicar</button>
+        </div>
+      </form>
     </section>
-    <script src="../app/app.js"></script>
-</body>
+    <script type="module" src="../app/app.js"></script>
+  </body>
 </html>

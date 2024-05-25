@@ -1,0 +1,98 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Estilos del contenedor principal */
+.container {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos del encabezado */
+h1 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    position: relative;
+    display: inline-block;
+}
+
+h1::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 3px;
+    background: #ff9800;
+    margin: 10px auto 0;
+}
+
+/* Estilos de las secciones de contenido */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content:hover {
+    transform: translateY(-5px); /* Elevación al hacer hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Aumento de la sombra al hacer hover */
+}
+
+.image-container {
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px; /* Redondear las esquinas de las imágenes */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9); /* Sombra en las imágenes */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.05); /* Efecto de zoom al hacer hover */
+    box-shadow: 0 50px 90px rgba(0, 0, 0, 0.9); /* Aumento de la sombra al hacer hover */
+}
+
+.content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 800px;
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}

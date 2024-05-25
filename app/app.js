@@ -7,5 +7,14 @@ function cargarNavbar() {
       });
   }
   
+  // JavaScript para hacer el navbar reutilizable
   document.addEventListener('DOMContentLoaded', cargarNavbar);
-  
+ 
+    document.addEventListener("DOMContentLoaded", function() {
+      fetch('/pages/footer.html')
+        .then(response => response.text())
+        .then(data => {
+          document.querySelector('footer').innerHTML = data;
+        });
+    });
+ 

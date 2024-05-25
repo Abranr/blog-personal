@@ -1,0 +1,36 @@
+nav {
+    background-color: black;
+    text-align: center;
+    font-size: 30px;
+    height: 50px;
+    width: 100%;
+    color: white;
+}
+
+.texto {
+    margin-top: 15px;
+    height: 350px;
+    width: 80%;
+    font-size: 26px;
+}
+
+.formulario {
+    font-size: 18px;
+}
+
+.titulo-exp {
+    width: 80%;
+    font-size: 30px;
+}
+
+.publicar-btn {
+  display: flex;
+  flex-direction: left;
+   
+}
+
+.publicar {
+    background-color: green;
+    color: white;
+    font-size: 20px;
+}

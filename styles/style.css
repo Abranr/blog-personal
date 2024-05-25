@@ -3,10 +3,16 @@
   margin: 0;
 }
 
-main {
+body {
   min-height: 100dvh;
   background-color: #f2f2f2;
-  padding: 0 2rem;
+}
+main {
+  padding: 1rem 4rem;
+  text-align: center;
+}
+article {
+  padding-top: 1rem;
 }
 .content_blog {
   display: flex;
@@ -24,6 +30,7 @@ main {
   /* grid-auto-flow: dense; */
   grid-auto-rows: 14rem;
   grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  padding-top: 2rem;
 }
 .blog {
   background-color: cornflowerblue;
@@ -45,7 +52,7 @@ main {
 
 .addBlog {
   background-color: #212121;
-  & a {
+  & .linkAgregar {
     text-decoration: none;
     font-size: 0.8rem;
     color: #e8e8e8;

@@ -4,60 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
-   <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="./styles/navbar.css" />
     <title>BLOG PERSONAL</title>
   </head>
   <body>
+    <header>
+      <nav id="navbar"></nav>
+    </header>
     <main>
-      <nav id="navbar">
-      </nav>
+      <h1>Blog Personal</h1>
       <article class="content_blog">
-        <h1>Blog Personal</h1>
-        <button class="addBlog"><a href="./pages/crearBlog.html">Agregar</a></button>
-        <section class="items_blog">
-          <div class="blog">
-            <h2>Titulo</h2>
-            <p>Contenido</p>
-            <div class="btn_group">
-              <button class="editBlog">Editar</button>
-              <button class="deleteBlog">Eliminar</button>
-            </div>
-          </div>
-          <div class="blog">
-            <h2>Titulo</h2>
-            <p>Contenido</p>
-            <div class="btn_group">
-              <button class="editBlog">Editar</button>
-              <button class="deleteBlog">Eliminar</button>
-            </div>
-          </div>
-          <div class="blog">
-            <h2>Titulo</h2>
-            <p>Contenido</p>
-            <div class="btn_group">
-              <button class="editBlog">Editar</button>
-              <button class="deleteBlog">Eliminar</button>
-            </div>
-          </div>
-          <div class="blog">
-            <h2>Titulo</h2>
-            <p>Contenido</p>
-            <div class="btn_group">
-              <button class="editBlog">Editar</button>
-              <button class="deleteBlog">Eliminar</button>
-            </div>
-          </div>
-          <div class="blog">
-            <h2>Titulo</h2>
-            <p>Contenido</p>
-            <div class="btn_group">
-              <button class="editBlog">Editar</button>
-              <button class="deleteBlog">Eliminar</button>
-            </div>
-          </div>
-        </section>
+        <button class="addBlog"><a href="./pages/crearBlog.html" class="linkAgregar">Agregar</a></button>
+        <section class="items_blog"></section>
       </article>
     </main>
-    <script src="/app/app.js"></script>
+    <script type="module" src="./app/app.js"></script>
   </body>
 </html>

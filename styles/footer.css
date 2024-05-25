@@ -1,0 +1,66 @@
+/* CSS para el footer */
+#footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-contact, .footer-social {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer-contact h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+    font-size: 1.2em;
+}
+
+.footer-contact a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-social a {
+    color: white;
+    font-size: 2em;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.footer-social a:hover {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .footer-contact p {
+        font-size: 1em;
+    }
+
+    .footer-social a {
+        font-size: 1.5em;
+    }
+}

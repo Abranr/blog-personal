@@ -9,11 +9,22 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // JavaScript para hacer el navbar reutilizable
-function cargarNavbar(url) {
-  fetch(url || "/navbar.html")
-    .then((response) => response.text())
-    .then((data) => {
-      document.getElementById("navbar").innerHTML = data;
-    })
-    .catch((error) => console.error("Error al cargar el navbar:", error));
-}
+function cargarNavbar() {
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+      });
+  }
+  
+  // JavaScript para hacer el navbar reutilizable
+  document.addEventListener('DOMContentLoaded', cargarNavbar);
+ 
+    document.addEventListener("DOMContentLoaded", function() {
+      fetch('/pages/footer.html')
+        .then(response => response.text())
+        .then(data => {
+          document.querySelector('footer').innerHTML = data;
+        });
+    });
+ 

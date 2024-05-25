@@ -1,28 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos del header */
+#logo-intecap {
+  background-color: white; /* Cambia a 'transparent' si los compa;eros quieren */
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd; /* Opcional, para separar visualmente el header del navbar */
+}
+
+#logo-intecap img {
+  max-height: 80px; /*Ajustar la altura del logo segun sea necesario*/
+  width: auto;
+}
+
 /* Estilos del navbar */
 #navbar {
-    background-color: #333;
-    padding: 10px 0;
-    text-align: center;
-  }
-  
-  #navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-  }
-  
-  #navbar ul li {
-    display: inline;
-  }
-  
-  #navbar ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-  }
-  
-  #navbar ul li a:hover {
-    background-color: #555;
-  }
-  
+  background-color: #333;
+  margin-top: 15px;
+  padding: 0px 0px 8px;
+  text-align: center;
+}
+
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#navbar ul li {
+  margin: 0 10px;
+}
+
+#navbar ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+#navbar ul li a:hover {
+  background-color: #555;
+}

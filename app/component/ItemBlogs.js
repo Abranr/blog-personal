@@ -1,15 +1,14 @@
 import { dataBlogs as initialDataBlogs } from "../../data/dataBlogs.js";
 
 export const itemBlogs = (element) => {
-  // Obtener blogs del localStorage o usar dataBlogs inicial
   const dataBlogs = JSON.parse(localStorage.getItem("blogs")) || initialDataBlogs;
 
-  const tarjetaBlog = ` 
-    <div class="blog" id="1">
-      <h2>Titulo</h2>
-      <p>Contenido</p>
+  const tarjetaBlog = `
+    <div class="blog" id="{id}">
+      <h2>{title}</h2>
+      <p>{content}</p>
       <div class="btn_group">
-        <button class="editBlog">Editar</button>
+        <a href="./pages/editarBlog.html" class="editBlog">Editar</a>
         <button class="deleteBlog">Eliminar</button>
       </div>
     </div>
@@ -17,7 +16,7 @@ export const itemBlogs = (element) => {
 
   element.innerHTML = dataBlogs
     .map((blog) => {
-      return tarjetaBlog.replace("Titulo", blog.title).replace("Contenido", blog.content).replace("1", blog.id);
+      return tarjetaBlog.replace("{title}", blog.title).replace("{content}", blog.content).replace("{id}", blog.id);
     })
     .join("");
 

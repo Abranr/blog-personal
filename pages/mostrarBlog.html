@@ -13,18 +13,24 @@
     </header>
     <main>
       <section class="blog-header">
-        <h1>Blog Personal</h1>
-      </section>
-      <section>
-        <textarea class="Nombre-blog" rows="8" cols="30"></textarea>
-      </section>
+          <h1 class="boton-shine">Blog Personal</h1>
 
-      <section class="edit-section">
-        <textarea id="blogContent" rows="10" cols="50"></textarea>
-        <button onclick="editContent()">Editar</button>
+
       </section>
-    </main>
-    <!-- <script src="script.js"></script> -->
-    <script type="module" src="../app/app.js"></script>
+      <section><h4 class="subtitulo1">Escribe un titulo para tu blog</h4></section>
+      <section>
+
+        
+        <input class="Nombre-blog no-select" disabled>
+    </section>
+    <h4 class="subtitulo2">Escribe tu blog</h4>
+    <section class="edit-section">
+        <textarea id="blogContent" class="no-select" rows="10" cols="50" disabled ></textarea>
+        <button class="Btn" onclick="editContent()">Editar</button>
+        
+    </section>
+  </main>
+  <script src="script.js"></script>
+  <script src="../app/app.js"></script>
   </body>
 </html>

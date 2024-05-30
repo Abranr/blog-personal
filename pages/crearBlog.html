@@ -5,28 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog Crear</title>
     <link rel="stylesheet" href="blog.css" />
-    <script src="componente.js"></script>
-
+    <!-- <script src="componente.js"></script> -->
     <link rel="stylesheet" href="../styles/navbar.css" />
+    <link rel="stylesheet" href="../styles/blogCrear.css" />
   </head>
   <body>
     <nav id="navbar"></nav>
 
-    <h4>Publicar blog de experiencia</h4>
+    <main>
+      <h4>Publicar blog de experiencia</h4>
 
-    <section>
-      <form action="/my-handling-form-page" method="post" class="formulario">
-        <ul>
-          <input type="text" id="name" name="user_name" class="titulo-exp" />
+      <section>
+        <form class="formulario">
+          <ul>
+            <input type="text" id="name" name="user_name" class="titulo-exp" />
+            <textarea id="msg" name="user_message" class="texto"> </textarea>
+          </ul>
 
-          <textarea id="msg" name="user_message" class="texto"> </textarea>
-        </ul>
-
-        <div class="publicar-btn">
-          <button class="publicar">Publicar</button>
-        </div>
-      </form>
-    </section>
+          <div class="publicar-btn">
+            <button class="publicar" type="submit">Publicar</button>
+          </div>
+        </form>
+      </section>
+    </main>
     <footer></footer>
     <script type="module" src="../app/app.js"></script>
   </body>

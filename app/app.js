@@ -1,6 +1,6 @@
+import "./helpers/agregarBlog.js";
 import { itemBlogs } from "./component/ItemBlogs.js";
 import { eliminarBlog } from "./helpers/eliminarBlog.js";
-
 document.addEventListener("DOMContentLoaded", () => {
   cargarNavbar();
   const contentBlog = document.querySelector(".items_blog");

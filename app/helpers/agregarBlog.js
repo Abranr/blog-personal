@@ -7,7 +7,15 @@ formAgregarBlog.addEventListener("submit", function (e) {
   console.log(titulo);
   console.log(contenido);
 
-  // agregarBlog(titulo);
+  // const data = {
+  //   id: // Generar un id único, // Rodrigo
+  //   titulo: // Obtener el valor del input de titulo, // Andre
+  //   contenido: // Obtener el valor del input de contenido, // Andre
+  // };
+
+  // agregarBlog(data);
   formAgregarBlog.reset();
 });
-export function agregarBlog(data) {}
+export function agregarBlog(data) {
+  // Andre agregar el blog al localStorage
+}

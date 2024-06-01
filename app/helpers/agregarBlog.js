@@ -1,25 +1,27 @@
-const formAgregarBlog = document.querySelector(".formulario");
+document.addEventListener("DOMContentLoaded", function () {
+  const formAgregarBlog = document.querySelector(".formulario");
 
-formAgregarBlog.addEventListener("submit", function (e) {
-  e.preventDefault();
-  const titulo = document.querySelector("#name").value;
-  const contenido = document.querySelector("#msg").value;
-  console.log(titulo);
-  console.log(contenido);
+  if (formAgregarBlog) {
+    formAgregarBlog.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const titulo = document.querySelector("#name").value;
+      const contenido = document.querySelector("#msg").value;
 
-  // Generar un id único
-  const id = Date.now().toString();
+      // Generar un id único
+      const id = Date.now().toString();
 
-  // Crear el objeto data con los valores del formulario
-  const data = {
-    id: id,
-    titulo: titulo,
-    contenido: contenido,
-  };
+      // Crear el objeto data con los valores del formulario
+      const data = {
+        id: id,
+        title: titulo,
+        content: contenido,
+      };
 
-  // Llamar a la función agregarBlog con el objeto data
-  agregarBlog(data);
-  formAgregarBlog.reset();
+      // Llamar a la función agregarBlog con el objeto data
+      agregarBlog(data);
+      formAgregarBlog.reset();
+    });
+  }
 });
 
 export function agregarBlog(data) {

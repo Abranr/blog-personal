@@ -3,11 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Editar blog</title>
     <link rel="stylesheet" href="../styles/navbar.css" />
+    <link rel="stylesheet" href="../styles/mostrarBlog.css" />
   </head>
   <body>
     <nav id="navbar"></nav>
+    <main>
+      <section class="blog-header">
+        <h1 class="boton-shine">Blog Personal</h1>
+      </section>
+      <section><h4 class="subtitulo1">Titulo</h4></section>
+      <section>
+        <input class="Nombre-blog no-select" />
+      </section>
+      <h4 class="subtitulo2">Blog</h4>
+      <section class="edit-section">
+        <textarea id="blogContent" class="no-select" rows="10" cols="50"></textarea>
+        <button class="Btn">Guardar</button>
+      </section>
+    </main>
+    <footer></footer>
     <script type="module" src="../app/app.js"></script>
   </body>
 </html>

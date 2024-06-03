@@ -26,14 +26,14 @@ article {
 .items_blog {
   display: grid;
   width: 100%;
-  gap: 1rem;
+  gap: 3rem;
   /* grid-auto-flow: dense; */
   grid-auto-rows: 14rem;
   grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
-  padding-top: 2rem;
+  padding: 2rem 0;
 }
 .blog {
-  background-color: cornflowerblue;
+  background-color: #e8e8e8;
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -42,6 +42,14 @@ article {
   align-items: flex-start;
   border-radius: 1rem;
   cursor: pointer;
+  text-decoration: none;
+  color: #212121;
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  & h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
   & p {
     flex-grow: 1;
   }

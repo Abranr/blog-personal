@@ -36,10 +36,12 @@ article {
   background-color: cornflowerblue;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  text-align: left;
+  gap: 1rem;
   padding: 1rem 1rem;
   align-items: flex-start;
   border-radius: 1rem;
+  cursor: pointer;
   & p {
     flex-grow: 1;
   }

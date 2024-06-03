@@ -1,15 +1,14 @@
 import "./helpers/agregarBlog.js";
+import { mostrarBlog } from "./helpers/mostrarBlog.js";
 import { itemBlogs } from "./component/ItemBlogs.js";
 import { eliminarBlog } from "./helpers/eliminarBlog.js";
+import { editarBlog } from "./helpers/editarBlog.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   cargarNavbar();
   const contentBlog = document.querySelector(".items_blog");
-  if (contentBlog) {
-    itemBlogs(contentBlog);
-  }
+  itemBlogs(contentBlog);
   eliminarBlog();
-  // agregarBlog();
 });
 
 // JavaScript para hacer el navbar reutilizable
@@ -31,3 +30,5 @@ document.addEventListener("DOMContentLoaded", function () {
       document.querySelector("footer").innerHTML = data;
     });
 });
+mostrarBlog();
+editarBlog();

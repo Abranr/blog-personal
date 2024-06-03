@@ -10,4 +10,7 @@ formAgregarBlog.addEventListener("submit", function (e) {
   // agregarBlog(titulo);
   formAgregarBlog.reset();
 });
-export function agregarBlog(data) {}
+export function agregarBlog(data) {
+  
+
+}

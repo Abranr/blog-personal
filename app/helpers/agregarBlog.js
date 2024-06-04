@@ -1,3 +1,5 @@
+import { generateUUID } from "./idUnico";
+
 document.addEventListener("DOMContentLoaded", function () {
   const formAgregarBlog = document.querySelector(".formulario");
 
@@ -8,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const contenido = document.querySelector("#msg").value;
 
       // Generar un id único
-      const id = Date.now().toString();
+      const id = generateUUID()
 
       // Crear el objeto data con los valores del formulario
       const data = {

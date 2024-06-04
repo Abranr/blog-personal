@@ -1,8 +1,14 @@
-import { generateUUID } from "./idUnico";
-
 document.addEventListener("DOMContentLoaded", function () {
   const formAgregarBlog = document.querySelector(".formulario");
-
+  function generateUUID() {
+    var d = new Date().getTime();
+    var uuid = "xxxxxxxxxxxx4xxxyxxxxxxxxxxxxxxx".replace(/[xy]/g, function (c) {
+      var r = (d + Math.random() * 16) % 16 | 0;
+      d = Math.floor(d / 16);
+      return (c == "x" ? r : (r & 0x3) | 0x8).toString(16);
+    });
+    return uuid;
+  }
   if (formAgregarBlog) {
     formAgregarBlog.addEventListener("submit", function (e) {
       e.preventDefault();
@@ -10,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const contenido = document.querySelector("#msg").value;
 
       // Generar un id único
-      const id = generateUUID()
+      const id = generateUUID();
 
       // Crear el objeto data con los valores del formulario
       const data = {
